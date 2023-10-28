@@ -1,0 +1,56 @@
+:root{
+    --text: rgb(0, 4, 5);
+    --background: rgb(218, 242, 251);
+    --primary: rgb(9, 71, 93);
+    --secondary: rgb(200, 236, 249);
+    --accent: rgb(0, 168, 219);
+}
+.homeSection {   
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    .textDiv {
+        width: 40%;
+        flex-direction: column;
+        h1 {
+            font-size: 76px;
+        }
+        .smallText {
+            color: var(--primary);
+        }
+        .btn {
+            align-self: flex-start;
+            margin-top: 3rem;
+            color:var(--secondary);
+            font-weight: 600;
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .imageDivContainer {
+            gap:1.5rem;
+            .firstRow {
+                margin-top: 8rem;
+            }
+            .imageDiv {
+                margin-bottom: 1rem;
+                flex-direction: column;
+                background: #fff;
+                padding: 2rem;
+                border-radius: .5rem;
+                width: 250px;
+                img {
+                    width: 110%;
+                    border-radius: .3rem;
+                }
+                .TitleContainer {
+                    width: 100%;
+                    justify-content: space-between;
+                    padding-top:1rem ;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}

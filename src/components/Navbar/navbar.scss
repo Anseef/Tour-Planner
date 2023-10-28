@@ -1,0 +1,94 @@
+:root{
+    --text: rgb(0, 4, 5);
+    --background: rgb(218, 242, 251);
+    --primary: rgb(9, 71, 93);
+    --secondary: rgb(200, 236, 249);
+    --accent: rgb(0, 168, 219);
+}
+.navbarSection {
+    height:15vh;
+}
+.header {
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: max-content;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 1px 1px rgba(14, 55, 99, 0.3);
+
+    .logo {
+        color: var(--text);
+        font-weight: 600;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    }
+    @media screen and ( max-width: 768px) {
+        .navBar {
+            position: absolute;
+            height: max-content;
+            width: 80%;
+            border-radius: 1rem;
+            top:-100rem;
+            left: 50%;
+            padding: 1rem;
+            transform: translate(-50%);
+            z-index: 2000;
+            box-shadow: 0 1px 1px rgba(14, 55, 99, 0.9);
+            transition: 0.5s ease-in-out;
+
+            .navLists {
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin: auto;
+                padding: .5rem 0;
+
+                .navItem {
+                    padding: .5rem 0;
+
+                    .navLink {
+                        color: var(--text);
+                        font-size: 1rem;
+                        font-weight: 600;
+                        &:hover {
+                            color: var(--primary);
+                        }
+                    }
+                }
+
+                .btn {
+                    margin-top: .5rem;
+
+                    a {
+                        font-weight: 600;
+                        color: var(--background);
+                    }
+                }
+            }
+
+            .closeNavbar {
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+                color: var(--primary);
+                &:hover {
+                    color: var(--secondary);
+                }
+            }
+        }
+
+        .activeNavbar {
+            top: 7rem;
+        }
+    }
+
+    .toggleNavbar {
+        .icon {
+            font-size: 25px;
+            color: var(--primary);
+        }
+    }
+}
