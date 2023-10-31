@@ -22,7 +22,7 @@ const Home = () => {
         <span data-aos="fade-up" className="smallText">
         Welcome to TouristaTrail, where you'll find your dream destination, be it a peaceful beach retreat, an adventurous journey, or a cultural exploration. Our expert team crafts unforgettable moments for you to cherish.
         </span>
-        <button className='btn'>Get Started</button>
+        <a className='btn' href="#Packages">Get Started</a>
       </div>
       <div className="imageDivContainer flex">
         <div data-aos="fade-up" className="firstRow">

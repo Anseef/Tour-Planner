@@ -16,17 +16,6 @@
             color: var(--text);
             margin: 1rem 0;
             z-index: 2;
-
-            &::after {
-                position: absolute;
-                content: '';
-                background: var(--secondary);
-                height: 5px;
-                width: 120px;
-                right: 0;
-                bottom: 5px;
-                z-index: -1;
-            }
         }
     }
 

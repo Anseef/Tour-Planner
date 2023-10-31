@@ -1,7 +1,8 @@
 import React,{ useEffect} from 'react'
 import './footer.scss'
 import { FiChevronRight, FiSend } from 'react-icons/fi';
-import { AiFillInstagram, AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai';
+import { AiFillInstagram, AiFillYoutube, AiFillX } from 'react-icons/ai';
+import { FaXTwitter } from 'react-icons/fa6';
 import ContactBanner from '../../Assets/contact-banner.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -49,13 +50,11 @@ const Footer = () => {
             </div>
 
             <div className="footerParagraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis 
-              sint alias eum quam nobis quidem, repudiandae in excepturi ut dolorum est 
-              corrupti magnam at? Ut laborum sapiente labore sequi?
+              Discover the world, one adventure at a time, with our website as your passport to travel to the far corners of the globe.
             </div>
 
             <div className="footerSocials">
-              <AiOutlineTwitter className='icon'/>
+              <FaXTwitter className='icon'/>
               <AiFillYoutube className='icon'/>
               <AiFillInstagram className='icon'/>
             </div>
@@ -134,12 +133,12 @@ const Footer = () => {
 
               <li className="footerList flex">
                 <FiChevronRight className='icon'/>
-                
+                Cookie Policy
               </li>
 
               <li className="footerList flex">
                 <FiChevronRight className='icon'/>
-                China
+                Legal Terms
               </li>
 
             </div>

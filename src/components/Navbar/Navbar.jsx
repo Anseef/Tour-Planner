@@ -3,6 +3,7 @@ import './navbar.scss'
 import { useState } from 'react';
 import { GrFormClose } from 'react-icons/gr';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { SiYourtraveldottv } from 'react-icons/si';
 const Navbar = () => {
   const [active, setActive] = useState('navBar');
   const showNav = () => {
@@ -21,6 +22,7 @@ const Navbar = () => {
       <header className='header flex'>
         <div className="logoDiv">
           <a href="/" className='logo flex'>
+            <SiYourtraveldottv className='icon'/>
             <h1>TouristaTrail</h1>
           </a>
         </div>

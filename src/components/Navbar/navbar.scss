@@ -17,6 +17,10 @@
     box-shadow: 0 1px 1px rgba(14, 55, 99, 0.3);
 
     .logo {
+        .icon {
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
         color: var(--text);
         font-weight: 600;
         cursor: pointer;
