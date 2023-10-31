@@ -12,6 +12,10 @@ const Navbar = () => {
     setActive('navBar');
   }
 
+  const handleNavItemClick = () => {
+    closeNav();
+  };
+
   return (
     <section className='navbarSection'>
       <header className='header flex'>
@@ -23,15 +27,15 @@ const Navbar = () => {
         <div className= { active }>
           <div className="navLists flex">
               <li className='navItem'>
-                <a href="#Home" className='navLink'>Home</a>
+                <a href="#Home" className='navLink' onClick={ handleNavItemClick }>Home</a>
               </li>
     
               <li className='navItem'>
-                <a href="#Packages" className='navLink'>Packages</a>
+                <a href="#Packages" className='navLink'  onClick={ handleNavItemClick }>Packages</a>
               </li>
 
               <li className='navItem'>
-                <a href="#Contact" className='navLink'>Contact</a>
+                <a href="#Contact" className='navLink'  onClick={ handleNavItemClick }>Contact</a>
               </li>
 
               <button className="btn">

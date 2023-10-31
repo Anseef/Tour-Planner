@@ -119,22 +119,22 @@ const Footer = () => {
 
             <div className="linkGroup">
               <span className="groupTitle">
-                COUNTRIES
+                LEGAL
               </span>
 
               <li className="footerList flex">
                 <FiChevronRight className='icon'/>
-                India
+                Terms and Conditions
               </li>
 
               <li className="footerList flex">
                 <FiChevronRight className='icon'/>
-                England
+                Privacy Policies
               </li>
 
               <li className="footerList flex">
                 <FiChevronRight className='icon'/>
-                Thailand
+                
               </li>
 
               <li className="footerList flex">
@@ -149,7 +149,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footerDiv flex">
-            <small>Copyright Reserved-Toursita2023</small>
+            <small>Copyright Toursita2023. All Rights Reserved</small>
       </div>
     </section>
   )
