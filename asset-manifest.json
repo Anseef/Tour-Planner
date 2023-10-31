@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Tour-Planner/static/css/main.ac85a41f.css",
+    "main.js": "/Tour-Planner/static/js/main.d41690cb.js",
+    "static/media/Greece.jpg": "/Tour-Planner/static/media/Greece.e1e5f42b20c6a6b9fb58.jpg",
+    "static/media/Rome.jpg": "/Tour-Planner/static/media/Rome.b1440576eacd1a8b5124.jpg",
+    "static/media/Thailand.jpg": "/Tour-Planner/static/media/Thailand.407a015b8392c278e7b8.jpg",
+    "static/media/NewYork.jpg": "/Tour-Planner/static/media/NewYork.764aea98e65ec67a9ebc.jpg",
+    "static/media/India.jpg": "/Tour-Planner/static/media/India.c7791b14b435d74d0949.jpg",
+    "static/media/Japan.jpg": "/Tour-Planner/static/media/Japan.d45191dcbd72692cf18e.jpg",
+    "static/media/Bali.jpg": "/Tour-Planner/static/media/Bali.85a4819f382cc8d67636.jpg",
+    "static/media/Maldives.jpg": "/Tour-Planner/static/media/Maldives.c30446cffad4fb656766.jpg",
+    "static/media/contact-banner.png": "/Tour-Planner/static/media/contact-banner.4facde4a90d7efc93cda.png",
+    "index.html": "/Tour-Planner/index.html",
+    "main.ac85a41f.css.map": "/Tour-Planner/static/css/main.ac85a41f.css.map",
+    "main.d41690cb.js.map": "/Tour-Planner/static/js/main.d41690cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac85a41f.css",
+    "static/js/main.d41690cb.js"
+  ]
+}
