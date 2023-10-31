@@ -1,0 +1,146 @@
+:root{
+    --text: rgb(0, 4, 5);
+    --background: rgb(218, 242, 251);
+    --primary: rgb(9, 71, 93);
+    --secondary: rgb(200, 236, 249);
+    --accent: rgb(0, 168, 219);
+}
+
+.main {
+    width: 100%;
+
+    .sectionTitle {
+        .title {
+            position: relative;
+            width: max-content;
+            color: var(--text);
+            margin: 1rem 0;
+            z-index: 2;
+
+            &::after {
+                position: absolute;
+                content: '';
+                background: var(--secondary);
+                height: 5px;
+                width: 120px;
+                right: 0;
+                bottom: 5px;
+                z-index: -1;
+            }
+        }
+    }
+
+    .sectionContent {
+        justify-content: center;
+        gap:1.5rem;
+
+        .packageBlock {
+            height: 100%;
+            row-gap: 10px;
+            border-radius: 10px;
+            align-items: center;
+            background: var(--secondary);
+            box-shadow: 0 2px 4px rgba(140, 140, 140,.5);
+            overflow: hidden;
+            &:hover {
+                background: var(--background);
+                box-shadow: 1 4px 4px rgba(85, 85, 114, .5);
+                transition:  .3s ease;
+            }
+
+            .imageDiv {
+                height: 200px;
+                width: 100%;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: 2s ease;
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.03);
+                        transition: .2s ease-in-out;
+                    }
+                }
+            }
+
+            .cardInfo {
+                padding: 1rem;
+
+                .destTitle {
+                    color:var(--text);
+                }
+
+                .locationContainer {
+                    gap: .5rem;
+
+                    .location {
+                        color: var(--text);
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+
+                .price {
+                    width: 100%;
+                    padding: .5rem 0 0.5rem 0;
+                    gap:.5rem
+                }
+
+                .description {
+                    font-size: 14px;
+                    color: var(--text);
+                    font-weight: 500px;
+                }
+
+                .btn {
+                    margin-top: 1rem;
+                    color: var(--background);
+                    font-weight: 600;
+                    justify-content: space-between;
+                    gap: .5rem;
+                    cursor: pointer;
+
+                    .icon {
+                        align-self: center;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .main {
+        .title{
+            font-size: 1.5rem;
+    
+            &::after{
+                width: 155px !important;
+            }
+        }
+        .sectionContent {
+            grid-template-columns: repeat(2,1fr);
+
+            .packageBlock {
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .main{
+        .sectionContent {
+            grid-template-columns: repeat(3,1fr);
+    
+            .packageBlock {
+                height: auto;
+            }
+        }
+    }
+}

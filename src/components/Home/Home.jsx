@@ -1,22 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './home.scss'
 import Greece from '../../Assets/Greece.jpg';
 import India from '../../Assets/India.jpg';
 import Maldives from '../../Assets/Maldives.jpg';
 import Thailand from '../../Assets/Thailand.jpg';
 import { AiTwotoneStar } from 'react-icons/ai';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const Home = () => {
+
+  useEffect(() => {
+    Aos.init({duration:1000})
+  },[])
+
   return (
-    <section className='homeSection container flex'>
+    <section className='homeSection container flex' id="Home" >
       <div className="textDiv flex">
-        <h1>Unleash Your Wanderlust</h1>
-        <span className="smallText">
+        <h1 data-aos="fadeup">Unleash Your Wanderlust</h1>
+        <span data-aos="fade-up" className="smallText">
         Welcome to TouristaTrail, where you'll find your dream destination, be it a peaceful beach retreat, an adventurous journey, or a cultural exploration. Our expert team crafts unforgettable moments for you to cherish.
         </span>
         <button className='btn'>Get Started</button>
       </div>
       <div className="imageDivContainer flex">
-        <div className="firstRow">
+        <div data-aos="fade-up" className="firstRow">
           <div className="imageDiv flex">
             <img src={Greece} alt="" />
             <div className="TitleContainer flex">
@@ -38,7 +47,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="secondRow">
+        <div data-aos="fade-down" className="secondRow">
           <div className="imageDiv flex">
             <img src={Maldives} alt="" />
             <div className="TitleContainer flex">

@@ -5,10 +5,8 @@
     --secondary: rgb(200, 236, 249);
     --accent: rgb(0, 168, 219);
 }
-.navbarSection {
-    height:15vh;
-}
 .header {
+    background-color: var(--background);
     position: fixed;
     align-items: center;
     justify-content: space-around;
@@ -24,9 +22,12 @@
         cursor: pointer;
         align-items: center;
         justify-content: center;
+        margin-right: 1rem;
     }
     @media screen and ( max-width: 768px) {
         .navBar {
+            
+            background: var(--secondary);
             position: absolute;
             height: max-content;
             width: 80%;
@@ -89,6 +90,44 @@
         .icon {
             font-size: 25px;
             color: var(--primary);
+        }
+    }
+}
+
+@media screen and (min-width: 768px ) {
+    .toggleNavbar, .closeNavbar {
+        display: none;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+        .navBar {
+            .navLists {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .navItem {
+                    .navLink {
+                        color: var(--text);
+                        padding: 0 0.65rem;
+                        font-size: 1rem;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: var(--accent);
+                        }
+                    }
+                }
+
+                .btn {
+                    margin-left: 1rem;
+                    a {
+                        color: var(--background);
+                        font-weight: 600;
+                    }
+                }
+            }
         }
     }
 }

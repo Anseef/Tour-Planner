@@ -3,7 +3,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 :root{
     --text: rgb(0, 4, 5);
@@ -18,6 +19,9 @@
     --primary: rgb(162, 224, 246);
     --secondary: rgb(6, 42, 55);
     --accent: rgb(36, 204, 255);
+}
+html {
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
@@ -68,4 +72,22 @@ input {
 }
 body {
     background: var(--background);
+}
+
+
+@media screen and (min-width: 1240px) {
+    .container {
+        width: 80% !important;
+        margin: auto !important;
+    }
+
+    .section {
+        padding: 6rem 0 4rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    body {
+        zoom: 1.7;
+    }
 }

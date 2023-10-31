@@ -6,6 +6,7 @@
     --accent: rgb(0, 168, 219);
 }
 .homeSection {   
+    height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -27,9 +28,10 @@
     }
     @media screen and (min-width:1024px) {
         .imageDivContainer {
+            margin-top: 2rem;
             gap:1.5rem;
             .firstRow {
-                margin-top: 8rem;
+                margin-top: 7rem;
             }
             .imageDiv {
                 margin-bottom: 1rem;
@@ -37,7 +39,7 @@
                 background: #fff;
                 padding: 2rem;
                 border-radius: .5rem;
-                width: 250px;
+                width: 270px;
                 img {
                     width: 110%;
                     border-radius: .3rem;
@@ -50,6 +52,72 @@
                     font-weight: 500;
                     color: var(--primary);
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homeSection {
+        .textDiv {
+            width: 90%;
+            h1 {
+
+                font-size: 10vw;
+                margin-bottom: 1rem;
+            }
+            .smallText {
+                font-size: 14px;
+            }
+            .btn {
+                margin-top: 2rem;
+            }
+        }
+        .imageDivContainer {
+            display: none;
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    .homeSection {
+        .textDiv {
+            width: 40%;
+            h1 {
+
+                font-size: 58px;
+                margin-bottom: 1rem;
+            }
+            .smallText {
+                font-size: 14px;
+            }
+            .btn {
+                margin-top: 2rem;
+            }
+        }
+    }
+    .imageDivContainer {
+        gap:1rem;
+        .firstRow {
+            margin-top: 6rem;
+        }
+        .imageDiv {
+            margin-bottom: 1rem;
+            flex-direction: column;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: .5rem;
+            width: 210px;
+            img {
+                width: 110%;
+                border-radius: .3rem;
+            }
+            .TitleContainer {
+                width: 100%;
+                justify-content: space-between;
+                padding-top:1rem ;
+                font-size: 18px;
+                font-weight: 500;
+                color: var(--primary);
             }
         }
     }

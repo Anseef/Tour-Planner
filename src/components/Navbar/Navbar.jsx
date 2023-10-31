@@ -2,7 +2,7 @@ import React from 'react'
 import './navbar.scss'
 import { useState } from 'react';
 import { GrFormClose } from 'react-icons/gr';
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi';
 const Navbar = () => {
   const [active, setActive] = useState('navBar');
   const showNav = () => {
@@ -23,24 +23,17 @@ const Navbar = () => {
         <div className= { active }>
           <div className="navLists flex">
               <li className='navItem'>
-                <a href="/" className='navLink'>Home</a>
+                <a href="#Home" className='navLink'>Home</a>
               </li>
     
               <li className='navItem'>
-                <a href="/" className='navLink'>Packages</a>
+                <a href="#Packages" className='navLink'>Packages</a>
               </li>
-    
+
               <li className='navItem'>
-                <a href="/" className='navLink'>Pricing</a>
+                <a href="#Contact" className='navLink'>Contact</a>
               </li>
-    
-              <li className='navItem'>
-                <a href="/" className='navLink'>About</a>
-              </li>
-    
-              <li className='navItem'>
-                <a href="/" className='navLink'>Contact</a>
-              </li>
+
               <button className="btn">
                 <a href="/">BOOK NOW</a>
               </button>

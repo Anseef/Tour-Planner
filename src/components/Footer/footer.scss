@@ -1,0 +1,301 @@
+:root{
+    --text: rgb(0, 4, 5);
+    --background: rgb(218, 242, 251);
+    --primary: rgb(9, 71, 93);
+    --secondary: rgb(200, 236, 249);
+    --accent: rgb(0, 168, 219);
+} 
+.footer {
+    width: 100%;
+    position: relative;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: center;
+
+    .sectionContent {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        .contactDiv {
+            margin-top: 5rem;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5rem;
+            gap: 3rem;
+            .contactDivMain {
+                flex-direction: column;
+                gap: 2rem;
+                .text {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1rem;
+
+                    small {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: var(--text);
+                    }
+        
+                    h2 {
+                        color: var(--text);
+                        font-size: 2.8rem;
+                    }
+                }
+        
+                .inputDiv {
+                    gap: .5rem;
+                    flex-direction: column;
+                    label {
+                        align-self: flex-start;
+                        font-weight: 600;
+                        color: var(--text);
+                    }
+                    input {
+                        padding: .5rem .6rem;
+                        border-radius: .5rem;
+                        border: 2px solid var(--primary);
+                        outline: none;
+                        background: transparent;
+                        color: var(--primary);
+                        font-weight: 500;
+        
+                        &::placeholder {
+                            opacity: .5rem;
+                            font-weight: 500;
+                            color: var(--primary);
+                        }
+                    }
+                    textarea {
+                        width: 100%;
+                        resize: none;
+                        height: 160px;
+                        padding: .5rem .6rem;
+                        border-radius: .5rem;
+                        border: 2px solid var(--primary);
+                        background: transparent;
+                        color: var(--primary);
+                        font-weight: 500;
+                        outline: none;
+        
+                        &::placeholder {
+                            opacity: .5rem;
+                            font-weight: 500;
+                            font-size: larger;
+                            color: var(--primary);
+                        }
+                    }
+        
+                    .btn {
+                        justify-content: center;
+                        width: 100%;
+                        margin-top: 1rem;
+                        color: var(--background);
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .contactBanner {
+                margin-top:7rem;
+            }
+
+            @media screen and (max-width: 768px){
+                .contactBanner {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .footerContent {
+        background: var(--secondary);
+        width: 100%;
+        height: max-content;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .footerCard {
+            position: relative;
+            gap: 2rem;
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow: hidden;
+
+            .footerIntro {
+                flex-basis: 50%;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                row-gap: .5rem;
+
+                .logoDiv {
+                    font-size: 18px;
+                    font-weight: 600;
+                .logo {
+                    color: var(--primary);
+                    }
+                }
+
+                .footerParagraph {
+                    font-size: 13px;
+                    color:var(--text);
+                }
+
+                .footerSocials {
+                    column-gap: .5rem;
+
+                    .icon {
+                        color: var(--text);
+                        font-size: 20px;
+                        margin-right: .5rem;
+
+                        &:hover {
+                            color: var(--accent);
+                        }
+                    }
+                }
+            }
+
+            .footerLinks {
+                flex-basis: 50%;
+                width: 100%;
+                gap: 1rem;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: space-between;
+
+                .linkGroup {
+                    display: block;
+                    font-weight: 600;
+                    color: var(--text);
+                    margin-bottom: .5rem;
+
+                }
+                
+                .footerList {
+                    font-size :12px;
+                    color: var(--primary);
+                    transition: .3s ease-in-out;
+
+                    .icon {
+                        font-size: 15px;
+                    }
+                    &:hover {
+                        color: var(--accent);
+                        transform: translateX(7px);
+                    }
+                }
+            }
+        }
+    }
+    .footerDiv {
+        background: var(--accent);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        justify-content: center;
+        color:var(--background);
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        .footerContent {
+            .footerCard {
+                flex-direction: row;
+                .footerParagraph {
+                    font-size: 18px;
+                    color: var(--primary);
+                }
+                .footerSocials {
+                    column-gap: .5rem;
+                }
+                .footerLinks {
+                    grid-template-columns: repeat(3,1fr);
+                    .footerList {
+                        font-size: 14px;
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 500px) {
+    .footer {
+        .footerContent {
+            .footerCard {
+                .footerLinks {
+                    grid-template-columns: repeat(3,1fr);
+                    padding-bottom:1rem ;
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+        .sectionContent {
+            .contactDiv{
+                width: 90%;
+                min-width: 120px;
+                flex-direction: column;
+                gap: 2rem;
+                margin-bottom: 5rem;
+                .text {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    small {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: var(--text);
+                    }
+        
+                    h2 {
+                        color: var(--text);
+                        font-size: 1.2rem;
+                    }
+                }
+        
+                .inputDiv {
+                    width: 100%;
+                    
+                    input {
+                        width: 100%;
+                        padding: .3rem .6rem;
+
+                        &::placeholder {
+                            font-size: 14px;
+                        }
+                    }
+                    textarea {
+                        width: 100%;
+                        &::placeholder {
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+
+                .contactBanner {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}
